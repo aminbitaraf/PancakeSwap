@@ -19,6 +19,8 @@ const ContainedButton = styled(Btn)(() => ({
     letterSpacing: '0.03em',
     "&:hover": {
         opacity: 0.75,
+        boxShadow: 'none',
+        backgroundColor: theme.palette.primary.main
     },
     "&:active": {
         boxShadow: 'none',

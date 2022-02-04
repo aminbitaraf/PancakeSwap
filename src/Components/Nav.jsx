@@ -116,10 +116,15 @@ const Nav = () => {
                    borderTop={`1px solid ${theme.palette.border.color}`}
                    bottom={0}
                    left={0}>
-                <Tabs value={0} indicatorColor="transparent" className={classes.appBarItems} style={{width: '100%'}}>
+                <Tabs value={0} TabIndicatorProps={{
+                    style: {
+                        backgroundColor: "transparent"
+                    }
+                }} className={classes.appBarItems} style={{width: '100%'}}>
                     {
                         NavbarIcon.map((item, key) =>
                             <Tab
+                                value={key}
                                 disableRipple
                                 className={`${item['title'] === 'Trade' ? classes.activeAppBarItem : classes.notActiveAppBarItem}`}
                                 key={key}

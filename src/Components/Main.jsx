@@ -21,7 +21,7 @@ const Main = () => {
     const largeScreen = useMediaQuery(theme => theme.breakpoints.up('sm'))
 
     return (
-        <Grid p={2} container className={classes.root}>
+        <Grid px={2} container className={classes.root}>
             <Stack direction="row"
                    width={'100%'}
                    mt={largeScreen ? 4 : 2}

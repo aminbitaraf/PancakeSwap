@@ -20,7 +20,7 @@ const FooterItem = (props) => {
 const FooterColumn = (props) => {
     return (
         <Stack spacing={1}>
-            <Typography component='h6' color='secondary.light' variant='body1'>{props.title}</Typography>
+            <Typography component='h6' color={'secondary.light'} variant='body1'>{props.title}</Typography>
             {
                 props.items.map((item, key) =>
                     <FooterItem key={key} link={item['href']}>{item['name']}</FooterItem>
@@ -49,7 +49,7 @@ const Footer = () => {
     const classes = useStyles()
 
     return (
-        <Grid p={largeScreen ? "56px 40px" : '40px 16px'} bgcolor='background.dark' xl={12} container>
+        <Grid p={largeScreen ? "56px 40px" : '40px 16px 80px'} bgcolor='background.dark' xl={12} container>
             <Container maxWidth="lg">
                 <Stack spacing={3} divider={<Divider orientation="horizontal" color={'#4a4a4a'} flexItem/>}
                        direction={largeScreen ? 'column' : 'column-reverse'}>
